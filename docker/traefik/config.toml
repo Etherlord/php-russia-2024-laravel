@@ -1,0 +1,3 @@
+[[tls.certificates]]
+    certFile = "/config/php-russia-2024-laravel.local.crt"
+    keyFile = "/config/php-russia-2024-laravel.local.key"
