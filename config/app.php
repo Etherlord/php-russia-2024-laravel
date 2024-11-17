@@ -124,5 +124,5 @@ return [
         'driver' => env('APP_MAINTENANCE_DRIVER', 'file'),
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
-
+    'welcome-message' => env('WELCOME_MESSAGE', 'Default welcome message from config'),
 ];
