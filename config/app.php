@@ -124,5 +124,11 @@ return [
         'driver' => env('APP_MAINTENANCE_DRIVER', 'file'),
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
+
     'welcome-message' => env('WELCOME_MESSAGE', 'Default welcome message from config'),
+    's3-user' => env('S3_USER', 'default-user'),
+    's3-password' => env('S3_PASSWORD', 'default-password'),
+    's3-region' => env('S3_REGION', 'default-region'),
+    's3-endpoint' => env('S3_ENDPOINT', 'http://localhost'),
+    's3-bucket-name' => env('S3_BUCKET_NAME', 's3-bucket-name'),
 ];

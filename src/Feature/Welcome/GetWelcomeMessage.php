@@ -10,6 +10,9 @@ final readonly class GetWelcomeMessage
 {
     public function handle(): string
     {
-        return Config::get('app.welcome-message');
+        $welcomeMessage = Config::get('app.welcome-message');
+        \assert(\is_string($welcomeMessage));
+
+        return $welcomeMessage;
     }
 }

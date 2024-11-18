@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+use App\Infrastructure\S3\Console\S3SetupCommand;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Foundation\Configuration\Middleware;
@@ -25,6 +26,9 @@ $app = Application::configure(basePath: dirname(__DIR__))
     ->withExceptions(static function (Exceptions $exceptions): void {
 
     })
+    ->withCommands([
+        S3SetupCommand::class,
+    ])
     ->create()
 ;
 
