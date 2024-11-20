@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+use App\Feature\Job\Consumer\ConsumerCommand;
 use App\Infrastructure\S3\Console\S3SetupCommand;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
@@ -28,6 +29,7 @@ $app = Application::configure(basePath: dirname(__DIR__))
     })
     ->withCommands([
         S3SetupCommand::class,
+        ConsumerCommand::class,
     ])
     ->create()
 ;

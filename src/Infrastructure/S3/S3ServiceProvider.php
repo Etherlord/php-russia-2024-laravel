@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Infrastructure\S3;
 
-use App\Infrastructure\S3\Command\UploadFileToS3Handler;
+use App\Infrastructure\S3\Command\UploadFileToS3;
 use App\Infrastructure\S3\Storage\S3FileStorage;
 use Aws\S3\S3Client;
 use Illuminate\Contracts\Foundation\Application;
@@ -45,6 +45,6 @@ final class S3ServiceProvider extends ServiceProvider
         $this->app->singleton(S3FileStorage::class, static fn(Application $_app) => new S3FileStorage($s3Client));
         $s3FileStorage = $this->app->get(S3FileStorage::class);
         \assert($s3FileStorage instanceof S3FileStorage);
-        $this->app->singleton(UploadFileToS3Handler::class, static fn(Application $_app) => new UploadFileToS3Handler($s3FileStorage));
+        $this->app->singleton(UploadFileToS3::class, static fn(Application $_app) => new UploadFileToS3($s3FileStorage));
     }
 }

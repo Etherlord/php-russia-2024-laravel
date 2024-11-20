@@ -5,12 +5,15 @@
     "type": "project",
     "require": {
         "php": "^8.3",
-        "aws/aws-sdk-php": "^3.328",
-        "laravel/framework": "^11.32",
+        "aws/aws-sdk-php": "^3.328.2",
+        "laravel/framework": "^11.33.2",
         "laravel/octane": "^2.5.9",
         "laravel/tinker": "^2.10",
+        "psr/log": "^3.0.2",
+        "spiral/goridge": "^4.2",
         "spiral/roadrunner-cli": "^2.6.0",
-        "spiral/roadrunner-http": "^3.5.1"
+        "spiral/roadrunner-http": "^3.5.1",
+        "spiral/roadrunner-jobs": "^4.6"
     },
     "require-dev": {
         "ergebnis/composer-normalize": "^2.44",

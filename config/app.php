@@ -131,4 +131,6 @@ return [
     's3-region' => env('S3_REGION', 'default-region'),
     's3-endpoint' => env('S3_ENDPOINT', 'http://localhost'),
     's3-bucket-name' => env('S3_BUCKET_NAME', 's3-bucket-name'),
+    'rr-rpc' => env('RR_RPC', 'tcp://default:6001'),
+    'rr-job-queue' => env('RR_JOB_QUEUE', 'default-job-queue'),
 ];

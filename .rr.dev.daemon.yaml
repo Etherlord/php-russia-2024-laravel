@@ -4,7 +4,7 @@ rpc:
     listen: tcp://0.0.0.0:6001
 
 server:
-    command: bin/console consume
+    command: php artisan consume
     relay: pipes
 
 jobs:

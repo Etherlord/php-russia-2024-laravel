@@ -8,7 +8,7 @@ use App\Infrastructure\S3\Storage\S3FileStorage;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Config;
 
-final readonly class UploadFileToS3Handler
+final readonly class UploadFileToS3
 {
     public function __construct(
         private S3FileStorage $storage,
