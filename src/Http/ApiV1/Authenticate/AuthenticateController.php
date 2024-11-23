@@ -12,6 +12,8 @@ final class AuthenticateController extends Controller
 {
     public function __invoke(): JsonResponse
     {
-        return new JsonResponse((new Authenticate())->handle());
+        return new JsonResponse([
+            'token' => (new Authenticate())->handle(),
+        ]);
     }
 }

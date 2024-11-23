@@ -1,0 +1,19 @@
+## Ignore all
+*
+
+## Except
+!/bootstrap
+!/config
+!/public
+!/resources
+!/routes
+!/src
+!/storage
+!.env
+!.rr.daemon.yaml
+!.rr.dev.daemon.yaml
+!.rr.dev.yaml
+!.rr.yaml
+!artisan
+!composer.json
+!composer.lock
